@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Senhas</h1>
+    <div class="form">
+      <label for="senha-tamanho">Tamanho da Senha:</label>
+      <input type="number" id="senha-tamanho" min="1" max="20" value="8">
+      <br>
+      <label>Opções Adicionais:</label>
+      <div class="option">
+        <input type="checkbox" id="letras-maiusculas">
+        <label for="letras-maiusculas">Incluir Letras Maiúsculas</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="letras-minusculas">
+        <label for="letras-minusculas">Incluir Letras Minúsculas</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="numeros">
+        <label for="numeros">Incluir Números</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="caracteres-especiais">
+        <label for="caracteres-especiais">Incluir Caracteres Especiais</label>
+      </div>
+      <button id="gerar-senha">Gerar Senha</button>
+      <input type="text" id="senha-gerada" readonly>
+      <button id="copiar">Copiar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
